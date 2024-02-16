@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        main {
+            text-align: center;
+            color: #f0f0f0;
+        }
+
+        #startButton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 40px;
+            font-size: 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        #startButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GAME-OPS</h1>
+    </header>
+
+    <main>
+        <h2>GALAXY</h2>
+        <button id="startButton">Start Game</button>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 All rights reserved | EdgeWalker99</p>
+    </footer>
+
+    <script>
+        document.getElementById("startButton").addEventListener("click", function() {
+            window.location.href = "game.html"; // Redirect to the game page
+        });
+    </script>
+</body>
+</html>

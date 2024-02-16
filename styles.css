@@ -1,0 +1,37 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/image2.jpg);
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header {
+    background-color: #0070fa;
+    color: #000000;
+    text-align: center;
+    padding: 1em;
+}
+#game
+{
+    text-align:center;
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+footer {
+    background-color: #0070fa;
+    color: #000000;
+    text-align: center;
+    padding: 0em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
