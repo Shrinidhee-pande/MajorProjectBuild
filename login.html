@@ -9,18 +9,29 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-image: url('image2.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         form {
             text-align: center;
-            margin-top: 100px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            border-radius: 10px;
         }
 
         input[type="text"], input[type="password"] {
             padding: 10px;
             margin: 10px;
             width: 200px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
         }
 
         input[type="submit"] {
@@ -30,10 +41,20 @@
             border: none;
             cursor: pointer;
             border-radius: 5px;
+            outline: none;
         }
 
         input[type="submit"]:hover {
             background-color: #45a049;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -43,6 +64,7 @@
         <input type="text" id="username" name="username" placeholder="Username" required><br>
         <input type="password" id="password" name="password" placeholder="Password" required><br>
         <input type="submit" value="Login">
+        <p class="error" id="errorMessage"></p>
     </form>
 
     <script>
@@ -56,7 +78,7 @@
             if (username === "user" && password === "password") {
                 window.location.href = "start.html?username=" + username;
             } else {
-                alert("Invalid username or password. Please try again.");
+                document.getElementById("errorMessage").textContent = "Invalid username or password. Please try again.";
             }
         });
     </script>
