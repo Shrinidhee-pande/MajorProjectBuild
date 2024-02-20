@@ -26,12 +26,3 @@ main {
     padding: 10px;
 }
 
-footer {
-    background-color: #0070fa;
-    color: #000000;
-    text-align: center;
-    padding: 0em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
